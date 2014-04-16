@@ -3,13 +3,38 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
-
+.drawing-table{
+	width: 800px;
+	height: 800px;
+	float: left;
+}
 table{
-    width: 800px;
-    height: 800px;
+    width: 100%;
+    height: 100%;
     border-collapse: collapse;
 }
 
 td{
-    border: 1px solid black;
+    border: 1px solid rgba(0,0,0,.1);
 }
+
+ul{
+	width: 100px;
+	float: left;
+	display: block;
+	margin: 20px 0 0 10px;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+	height: 30px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 4px solid white;
+}
+
+li.active-palette{
+	border-color: blue;
+}
+
